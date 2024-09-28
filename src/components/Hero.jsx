@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero = ({title="Become a React Dev", subtitle="Find the react job that suits your skill set"}) => {
   return (
     <>
       <section className="bg-blue-700 text-white flex items-center justify-center h-screen">
@@ -7,9 +7,9 @@ const Hero = () => {
             className="text-5xl   
  font-bold mb-4"
           >
-            Become a React Dev
+            { title }
           </h1>
-          <p className="text-2xl font-semibold">Find the React Job that fits your skill set</p>
+          <p className="text-2xl font-semibold">{subtitle}</p>
         </div>
       </section>
     </>
